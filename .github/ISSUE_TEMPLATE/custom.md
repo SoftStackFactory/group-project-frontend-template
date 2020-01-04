@@ -1,8 +1,8 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Resarch
+about: Topics needing further research 
 title: ''
-labels: ''
+labels: 'research'
 assignees: ''
 
 ---
