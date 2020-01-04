@@ -1,6 +1,6 @@
 image: gitpod/workspace-full
 tasks:
-    command: npx ng serve --port 8000 -n
+  - command: npx ng serve --port 8000 -n
 ports:
   - port: 8000
     onOpen: open-preview
