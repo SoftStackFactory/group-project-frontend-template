@@ -1,7 +1,6 @@
 image: gitpod/workspace-full
 tasks:
-  - init: npm install --development
-    command: npx ng serve --port 8000 --silent
+    command: npx ng serve --port 8000 -n
 ports:
   - port: 8000
     onOpen: open-preview
