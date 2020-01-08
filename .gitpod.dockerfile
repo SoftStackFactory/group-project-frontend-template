@@ -11,6 +11,7 @@ WORKDIR group-project-frontend-template
 COPY package*.json ./
 RUN npm install
 COPY . ./
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli \ 
+    && npm install -g npm-install-missing
 
 USER gitpod
