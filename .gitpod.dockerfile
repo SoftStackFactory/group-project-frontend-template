@@ -10,7 +10,7 @@ RUN curl https://gist.githubusercontent.com/ssffacilitator/886f341afc5cba5135da9
 WORKDIR group-project-frontend-template
 COPY package*.json ./
 RUN npm install
-COPY ./node_modules ./
+COPY . ./
 RUN npm install -g @angular/cli \ 
     && npm install -g npm-install-missing
 
