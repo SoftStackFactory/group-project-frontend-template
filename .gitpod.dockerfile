@@ -11,7 +11,6 @@ WORKDIR group-project-frontend-template
 COPY package*.json ./
 RUN npm install
 COPY . ./
-RUN chown -R gitpod node_modules
 RUN npm install -g @angular/cli
 
 USER gitpod
