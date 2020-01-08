@@ -2,8 +2,7 @@ image:
    file: .gitpod.dockerfile
 tasks:
   - prebuild: cp -R  ~/group-project-frontend-template/node_modules .
-    init: npm-install-missing
-    before: cp -R  ~/group-project-frontend-template/node_modules .
+    before: cp -R  ~/group-project-frontend-template/node_modules . && npm-install-missing
     command: ng serve --port 8000
 ports:
   - port: 8000
