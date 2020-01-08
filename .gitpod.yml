@@ -2,7 +2,7 @@ image:
    file: .gitpod.dockerfile
 tasks:
   - prebuild: ng test
-    init: cp -R  ~/group-project-frontend-template/node_modules . 
+    init: npm install
     command: ng serve --port 8000
 ports:
   - port: 8000
