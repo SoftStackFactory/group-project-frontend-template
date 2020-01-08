@@ -1,7 +1,7 @@
 image:
    file: .gitpod.dockerfile
 tasks:
-  - init: echo no | npm install
+  - init: rm ~/group-project-frontend-template/Dockerfile && cp -r ~/group-project-frontend-template/. .
     command: ng serve --port 8000
 ports:
   - port: 8000
