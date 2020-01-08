@@ -1,7 +1,7 @@
 image:
    file: .gitpod.dockerfile
 tasks:
-  - prebuild: cp -R  ~/group-project-frontend-template/node_modules .
+  - prebuild: cp -R  ~/group-project-frontend-template/node_modules . && ng test
     init: cp -R  ~/group-project-frontend-template/node_modules . 
     command: ng serve --port 8000
 ports:
